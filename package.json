@@ -1,0 +1,56 @@
+{
+	"name": "odil-io",
+	"version": "1.0.0",
+	"description": "A WordPress theme.",
+	"config": {
+		"name": "odil-io",
+		"text_domain": "wio",
+		"keys_namesace": "wio",
+		"functions_namespace": "wio",
+		"classes_namespace": "wio"
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions"
+	],
+	"dependencies": {
+		"npm": "^8.13.1",
+		"npm-check-updates": "^14.1.1"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^23.3.0",
+		"clean-css-cli": "^5.6.0",
+		"copyfiles": "^2.4.1",
+		"npm-run-all": "^4.1.5",
+		"postcss": "^8.4.14",
+		"postcss-cli": "^9.1.0",
+		"prettier": "npm:wp-prettier@^2.6.2",
+		"sass": "^1.53.0",
+		"stylelint": "^14.9.1",
+		"stylelint-config-sass-guidelines": "^9.0.1",
+		"stylelint-config-standard": "^26.0.0",
+		"stylelint-order": "^5.0.0",
+		"terser": "^5.14.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/odil-io/odil-io"
+	},
+	"author": "Odilio Witteveen",
+	"homepage": "https://odil.io",
+	"private": true,
+	"scripts": {
+		"stylelint": "stylelint src/sass/**/*.scss",
+		"css": "npm-run-all css-compile css-prefix css-minify",
+		"css-compile": "sass --style expanded --source-map --embed-sources --no-error-css src/sass/:css/",
+		"css-prefix": "postcss --use autoprefixer --replace 'css/*.css' '!css/*.min.css'",
+		"css-minify": "cleancss --batch --batch-suffix '.min' 'css/*.css' '!css/*min.css'",
+		"js-lint": "wp-scripts lint-js src/js",
+		"js": "npm-run-all js-copy js-minify",
+		"js-copy": "copyfiles --up 2 src/js/*.js js",
+		"js-minify": "npm-run-all --parallel js-minify-*",
+		"js-minify-admin": "terser js/admin.js --compress --source-map --output js/admin.min.js",
+		"js-minify-block-styles": "terser js/block-styles.js --compress --source-map --output js/block-styles.min.js",
+		"js-minify-script": "terser js/script.js --compress --source-map --output js/script.min.js"
+	}
+}
