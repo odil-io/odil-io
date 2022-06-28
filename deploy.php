@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Main Deployer file.
  *
@@ -15,59 +14,37 @@
 namespace Deployer;
 
 require 'recipe/common.php';
+require 'contrib/telegram.php';
 
-set( 'application', 'site' );
-
-set( 'repository', 'git@github.com:pronamic/wedwiki.git' );
-
+// Deployer Settings.
+set( 'application', 'odil-io' );
+set( 'repository', 'git@github.com:odil-io/odil-io.git' );
 set( 'allow_anonymous_stats', false );
-
-inventory( 'hosts.yml' );
-
 set( 'build_path', './build/' );
 
-/**
- * Build.
- *
- * @link https://github.com/woocommerce/woocommerce/blob/48fdb94bf311c977d15cbaa3d8dab66bac01feb7/plugins/woocommerce/.distignore
- * @link https://github.com/woocommerce/woocommerce/blob/48fdb94bf311c977d15cbaa3d8dab66bac01feb7/plugins/woocommerce/bin/build-zip.sh
- */
+host( 'odil-io' )
+	->port( 00000 )
+	->set( 'hostname', 'odil.io' )
+	->set( 'remote_user', 'ssh-deployer' )
+	->set( 'branch', 'main' )
+	->set( 'deploy_path', '~/projects/{{application}}' )
+	->set( 'theme_dir', '~/www/odil.io/public_html/wp-content/themes' );
+
+// Telegram Settings.
+set( 'telegram_token', '' );
+set( 'telegram_chat_id', '' );
+set( 'telegram_title', '' );
+set( 'telegram_text', '_{{user}}_ deploying `{{branch}}` to *{{target}}*' );
+set( 'telegram_failure_text', 'Deploy to *{{target}}* failed' );
+
 task(
 	'build',
 	function() {
-		/**
-		 * Composer.
-		 */
 		run( 'composer install' );
-
-		/**
-		 * Node.js.
-		 */
 		run( 'npm install' );
-
-		/**
-		 * CSS.
-		 */
 		run( 'npm run-script css' );
-
-		/**
-		 * JavaScript.
-		 */
 		run( 'npm run-script js' );
-
-		/**
-		 * Copy.
-		 *
-		 * @link https://github.com/woocommerce/woocommerce/blob/48fdb94bf311c977d15cbaa3d8dab66bac01feb7/plugins/woocommerce/bin/build-zip.sh#L20-L21
-		 */
 		run( 'rsync --recursive --exclude-from="./.distignore" --delete --delete-excluded "./" "{{build_path}}"' );
-
-		/**
-		 * Composer.
-		 *
-		 * @link https://github.com/woocommerce/woocommerce/blob/48fdb94bf311c977d15cbaa3d8dab66bac01feb7/plugins/woocommerce/bin/build-zip.sh
-		 * @link https://github.com/deployphp/deployer/blob/cfcb963ead5f993157d20478c8332c0c93908337/recipe/deploy/vendors.php
-		 */
 		within(
 			'{{build_path}}',
 			function () {
@@ -89,6 +66,11 @@ task(
 	function () {
 		run( 'ln -sfn {{deploy_path}}/current {{theme_dir}}/{{application}}' );
 	}
+);
+
+after(
+	'deploy:failed',
+	'telegram:notify:failure'
 );
 
 task(
