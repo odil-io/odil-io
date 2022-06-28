@@ -31,9 +31,17 @@ host( 'odil-io' )
 	->set( 'theme_dir', '~/www/odil.io/public_html/wp-content/themes' );
 
 // Telegram Settings.
-set( 'telegram_token', '' );
-set( 'telegram_chat_id', '' );
-set( 'telegram_title', '' );
+$telegram_token   = getenv( 'TELEGRAM_TOKEN' );
+$telegram_chat_id = getenv( 'TELEGRAM_CHAT_ID' );
+
+if ( ! empty( $telegram_token ) ) {
+	set( 'telegram_token', $telegram_token );
+}
+
+if ( ! empty( $telegram_chat_id ) ) {
+	set( 'telegram_chat_id', $telegram_chat_id );
+}
+set( 'telegram_title', 'GitHub Deploy' );
 set( 'telegram_text', '_{{user}}_ deploying `{{branch}}` to *{{target}}*' );
 set( 'telegram_failure_text', 'Deploy to *{{target}}* failed' );
 
