@@ -76,10 +76,9 @@ task(
 	}
 );
 
-after(
-	'deploy:failed',
-	'telegram:notify:failure'
-);
+before( 'deploy', 'telegram:notify' );
+
+after( 'deploy:failed', 'telegram:notify:failure' );
 
 task(
 	'deploy',
