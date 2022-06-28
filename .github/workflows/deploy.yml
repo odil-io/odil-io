@@ -8,17 +8,11 @@ on:
   push:
     branches:
       - main
-      - deployer-test
   workflow_dispatch:
 
 jobs:
-  qa:
-    name: "Quality Assurance"
-    uses: pronamic/wedwiki/.github/workflows/qa.yml@develop
-
   deploy:
     name: "Deploy to Production"
-    needs: qa
     runs-on: ubuntu-latest
     environment: production
     steps:
@@ -43,6 +37,7 @@ jobs:
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
           restore-keys: |
             ${{ runner.os }}-composer-
+
       - name: Install Composer dependencies
         run: composer install
 
