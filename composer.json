@@ -1,0 +1,32 @@
+{
+    "name": "odil-io/odil-io",
+    "description": "WordPress theme for odil.io.",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Odilio Witteveen",
+            "email": "witteveen@odil.io"
+        }
+    ],
+    "require": {
+    	"php": ">=7.2.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.5",
+        "wp-coding-standards/wpcs": "^2.2",
+        "phpmd/phpmd": "^2.8",
+        "phpcompatibility/php-compatibility": "^9.3",
+        "deployer/dist": "^6.8"
+    },
+    "scripts": {
+        "ci": [
+            "@phpcs",
+            "@stylelint"
+        ],
+        "phpcs": "XDEBUG_MODE=off vendor/bin/phpcs -s -v",
+        "stylelint": "npm run-script stylelint",
+        "post-autoload-dump": [
+            "if [[ -d vendor/wp-coding-standards/wpcs ]]; then vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs; fi"
+        ]
+    }
+}
