@@ -47,6 +47,6 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         with:
-          private-key: ${{ secrets.PRIVATE_KEY }}
+          private-key: ${{ secrets.SSH_PRIVATE_KEY }}
           deployer-binary: "vendor/bin/dep"
           dep: deploy
