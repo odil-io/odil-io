@@ -22,17 +22,37 @@
 				font-size: 1rem;
 			}
 			.alert {
-				position: relative;
+				position: fixed;
+				content:'';
+				top: 22px;
+				right: 22px;
 				text-align: center;
 				width: max-content;
 				color: #fff;
 				background-color: #292929;
 				padding: 6px 12px;
-				margin: 10% auto;
+				margin: 12px auto;
+			}
+			.panel {
+				padding: 12px;
+				margin: 0 auto;
+				max-width: 720px;
+			}
+			table {
+				width: 100%;
 			}
 		</style>
 	</head>
 	<body>
+		<div class="panel">
+			<h1>ODI/API</h1>
+			<p>This is my attempt to a simple REST API.</p>
+			<?php
+			if ( $_REQUEST['v'] == 'api' ) {
+				pre( 'payload.json' );
+			}
+			?>
+		</div>
 		<div class="alert">
 			API: <?php api_status(); ?>
 		</div>
