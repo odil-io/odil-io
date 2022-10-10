@@ -47,11 +47,6 @@
 		<div class="panel">
 			<h1>ODI/API</h1>
 			<p>This is my attempt to a simple REST API.</p>
-			<?php
-			if ( $_REQUEST['v'] == 'api' ) {
-				pre( 'payload.json' );
-			}
-			?>
 		</div>
 		<div class="alert">
 			API: <?php api_status(); ?>
