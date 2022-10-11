@@ -25,31 +25,21 @@
 				position: fixed;
 				content:'';
 				top: 22px;
-				right: 22px;
+				left: 50vw;
+				transform: translateX(-50%);
 				text-align: center;
 				width: max-content;
-				color: #fff;
-				background-color: #292929;
+				color: #292929;
 				padding: 6px 12px;
 				margin: 12px auto;
-			}
-			.panel {
-				padding: 12px;
-				margin: 0 auto;
-				max-width: 720px;
-			}
-			table {
-				width: 100%;
+				font-size: 24px;
+				font-weight: bold;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="panel">
-			<h1>ODI/API</h1>
-			<p>This is my attempt to a simple REST API.</p>
-		</div>
 		<div class="alert">
-			API: <?php api_status(); ?>
+			<h1>ODI/API: <?php api_status(); ?></h1>
 		</div>
 	</body>
 </html>
