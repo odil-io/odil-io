@@ -21,25 +21,39 @@
 				text-rendering: optimizeLegibility;
 				font-size: 1rem;
 			}
-			.alert {
-				position: fixed;
-				content:'';
-				top: 22px;
-				left: 50vw;
-				transform: translateX(-50%);
-				text-align: center;
-				width: max-content;
+			main {
+				max-width: 560px;
 				color: #292929;
 				padding: 6px 12px;
-				margin: 12px auto;
+			}
+			div {
+				margin: 12px 0;
+			}
+			.alert {
 				font-size: 24px;
 				font-weight: bold;
+			}
+			.delivery {
+				display: block;
+				padding: 14px 6px;
+				border:1px solid #c8c8c8;
+				border-radius: 5px;
+				font-size: 18px;
+				font-weight: bold;
+			}
+			.delivery:nth-child(even) {
+				background-color: #fff;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="alert">
-			<h1>ODI/API: <?php api_status(); ?></h1>
-		</div>
+		<main>
+			<div class="alert">
+				ODI/API: <?php api_status(); ?>
+			</div>
+			<div>
+				<?php deliveries(); ?>
+			</div>
+		</main>
 	</body>
 </html>
