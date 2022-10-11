@@ -34,11 +34,10 @@
 				font-weight: bold;
 			}
 			.delivery {
-				display: block;
-				padding: 14px 6px;
+				padding: 10px;
 				border: 2px solid #cbcbcb;
 				border-radius: 5px;
-				font-size: 18px;
+				font-size: 10px;
 				font-weight: bold;
 			}
 		</style>
