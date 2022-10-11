@@ -1,7 +1,9 @@
 <?php
 if ( $_REQUEST && array_key_exists( 'payload', $_REQUEST ) ) {
-	$file    = __DIR__ . '/payload-'.$_REQUEST['HTTP_X_GITHUB_DELIVERY'].'.json';
-	$request = $_REQUEST['payload'];
-	file_put_contents( $file, $request, FILE_APPEND );
+	$log    = __DIR__ . '/logs/' . $_SERVER['HTTP_X_GITHUB_DELIVERY'] . '.json';
+	$entry = array();
+	$entry['signature'] = $_SERVER['HTTP_X_HUB_SIGNATURE_256'];
+	$entry['payload']   = $_REQUEST['payload'];
+	file_put_contents( $log, json_encode( $entry ), FILE_APPEND );
 }
 ?>
