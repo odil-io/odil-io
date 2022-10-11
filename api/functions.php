@@ -10,8 +10,7 @@ function api_status() {
 
 function deliveries() {
 	$logfiles = scandir( __DIR__ . '/entries' );
-	if ( $logfiles ) {
-		array_multisort( array_map('filemtime',$logfiles) , SORT_DESC, $logfiles);
+	if ( array_reverse($logfiles) ) {
 		foreach ( $logfiles as $entryfile ) :
 			if ( ! in_array( $entryfile, array( '.', '..' ) ) ) :
 				$file = __DIR__ . '/entries/'. $entryfile;
