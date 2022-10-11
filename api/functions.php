@@ -14,7 +14,7 @@ function deliveries() {
 		foreach ( $logfile as $entryfile ) :
 			if ( ! in_array( $entryfile, array( '.', '..' ) ) ) :
 				echo '<div class="delivery">';
-					echo str_replace('.json', ' - ' . date (" H:i.", filemtime($filename)) ,$entryfile);
+					echo str_replace('.json', ' - ' . date (" H:i.", filemtime($entryfile)) ,$entryfile);
 				echo '</div>';
 			endif;
 		endforeach;
