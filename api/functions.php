@@ -3,7 +3,7 @@ function api_status() {
 	$logfile = scandir( __DIR__ . '/entries' );
 	if ( is_array( $logfile ) ) {
 		echo 'online';
-	}else{
+	} else {
 		echo 'offline';
 	}
 }
