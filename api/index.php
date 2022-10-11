@@ -25,6 +25,7 @@
 				max-width: 560px;
 				color: #292929;
 				padding: 6px 12px;
+				margin: 0 auto;
 			}
 			div {
 				margin: 12px 0;
