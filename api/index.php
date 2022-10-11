@@ -36,13 +36,10 @@
 			.delivery {
 				display: block;
 				padding: 14px 6px;
-				border: 2px solid #c8c8c8;
+				border: 2px solid #cbcbcb;
 				border-radius: 5px;
 				font-size: 18px;
 				font-weight: bold;
-			}
-			.delivery:nth-child(even) {
-				background-color: #fff;
 			}
 		</style>
 	</head>
