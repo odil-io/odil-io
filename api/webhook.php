@@ -4,12 +4,10 @@ if ( $_REQUEST && array_key_exists( 'payload', $_REQUEST ) ) {
 	$entry = array();
 	$entry['signature'] = $_SERVER['HTTP_X_HUB_SIGNATURE_256'];
 	$entry['payload']   = $_REQUEST['payload'];
-
-	try {
-		file_put_contents( $log, json_encode( $entry ), FILE_APPEND );
-		throw new Exception();
-	} catch (\Throwable $th) {
-		header("HTTP/1.1 500 Internal Server Error");
+	if ( file_put_contents( $log, json_encode( $entry ), FILE_APPEND ) ){
+		header("HTTP/1.1 200 Everything OK");
+	} else {
+		header("HTTP/1.1 500 NOT OK");
 	}
 }
 ?>
