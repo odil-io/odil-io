@@ -14,7 +14,6 @@
 				color: #292929;
 				background-color: #eaedf3;
 				height: 100vh;
-				width: 100vw;
 				margin: 0;
 				padding: 0;
 				text-size-adjust: 100%;
