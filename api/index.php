@@ -36,7 +36,7 @@
 			.delivery {
 				display: block;
 				padding: 14px 6px;
-				border:1px solid #c8c8c8;
+				border: 2px solid #c8c8c8;
 				border-radius: 5px;
 				font-size: 18px;
 				font-weight: bold;
