@@ -40,6 +40,9 @@
 				font-size: 10px;
 				font-weight: bold;
 			}
+			.delivery span {
+				float: right;
+			}
 		</style>
 	</head>
 	<body>
