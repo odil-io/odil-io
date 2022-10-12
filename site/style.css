@@ -384,3 +384,9 @@ code {
 table {
 	margin-bottom: 16px;
 }
+
+.gradient {
+    background-color: #373e47;
+    background-image: linear-gradient(to right, #347d39, #316dca, #8256d0, #c93c37, #ae5622);
+    background-size: 100% 3px;
+}
