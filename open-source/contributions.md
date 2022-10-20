@@ -4,7 +4,6 @@ These are non Co-Authored commits in which I had a notable impact on resolving t
 
 ## Contributions
 
-### Project
 
 A VSCode Plugin called [WordPress Snippets](https://marketplace.visualstudio.com/items?itemName=wordpresstoolbox.wordpress-toolbox) by [wpprotools.io](https://wpprotools.io/).
 
