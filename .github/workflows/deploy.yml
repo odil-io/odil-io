@@ -1,0 +1,30 @@
+name: Deploy
+on:
+  push:
+    branches: [ "sftp" ]
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Deploy site
+        uses: Creepios/sftp-action@v1.0.4
+        with:
+         host: ${{ secrets.HOST }}
+         port: ${{ secrets.PORT }}
+         username: ${{ secrets.USER }}
+         password: ${{ secrets.PASSWORD }}
+         localPath: './site/'
+         remotePath: './www/'
+
+      - name: Deploy API
+        uses: Creepios/sftp-action@v1.0.4
+        with:
+         host: ${{ secrets.HOST }}
+         port: ${{ secrets.PORT }}
+         username: ${{ secrets.USER }}
+         password: ${{ secrets.PASSWORD }}
+         localPath: './api/'
+         remotePath: './subdomains/api/'
