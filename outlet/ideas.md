@@ -1,0 +1,2 @@
+- Git Logger, Log _all_ activity on [date]
+  - https://stackoverflow.com/a/1829302/1835574
