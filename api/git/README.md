@@ -1,0 +1,1 @@
+Maybe use `git log --after="2022-10-4 00:00" --before="2022-10-5 00:00" >> log.md` but then automated for all repo's.
