@@ -1,0 +1,1 @@
+- Git Logger, Log _all_ activity on [date]
