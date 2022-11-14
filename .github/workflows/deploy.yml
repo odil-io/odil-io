@@ -1,7 +1,7 @@
-name: Deploy
+name: Deploy via SFTP
 on:
   push:
-    branches: [ "sftp" ]
+    branches: [ "main" ]
   workflow_dispatch:
 jobs:
   deploy:
