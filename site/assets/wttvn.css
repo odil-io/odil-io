@@ -9,8 +9,8 @@ html,
 body {
 	position: relative;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	color: #292929;
-	background-color: #eaedf3;
+	background-color: #292929;
+	color: #eaedf3;
 	height: 100vh;
 	width: 100vw;
 	margin: 0;
@@ -43,11 +43,14 @@ p{
 	margin-top: 0;
 }
 a {
-	color: #212121;
+	color: #eaedf3;
 	text-decoration: none;
 	position: relative;
 	z-index: 1;
 	white-space: nowrap;
+}
+a:focus, a:hover, a:active {
+        color: #292929;
 }
 a:before,
 li a:before{
@@ -182,6 +185,9 @@ footer {
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
+}
+.social {
+        color: #acacac;
 }
 .social:before {
 	display: none;
