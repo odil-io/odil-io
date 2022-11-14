@@ -135,7 +135,6 @@ aside, footer {
 	font-weight: 100;
 	font-size: 14px;
 	display: flex;
-	flex-wrap: nowrap;
 	gap: 8px;
 	justify-content: center;
 }
@@ -145,6 +144,7 @@ aside {
 	left: 0;
 	right: 0;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 @media (max-width: 320px) {
 	aside {
