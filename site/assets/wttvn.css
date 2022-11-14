@@ -75,11 +75,11 @@ li a:hover:before{
 	z-index: -1;
 }
 .profile {
-	padding-top: 10vw;
+	padding: 256px 12px;
 }
 @media (max-width: 320px) {
 	.profile {
-		padding-top: 90px;
+		padding: 128px 12px;
 	}
 }
 .profile__avatar {
