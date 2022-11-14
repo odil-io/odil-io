@@ -267,6 +267,9 @@ footer {
 .keybase:hover #path4572 {
 	fill:#282828;
 }
+.youtube:hover {
+	fill: #FF0000;
+}
 .text {
 	font-family: 'Nothing You Could Do', cursive;
 	opacity: 0.5;
