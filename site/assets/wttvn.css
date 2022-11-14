@@ -87,33 +87,6 @@ li a:hover:before{
 	margin-right: 2rem;
 	z-index: 1;
 }
-.profile__avatar:before {
-	position: absolute;
-	content:'';
-	-webkit-mask-image: url('/assets/media/blob.svg');
-	background-color: #a0daa9;
-	width: 100px;
-	height: 100px;
-	z-index: -1;
-	top: -13px;
-	left: -14px;
-}
-.profile__avatar:after {
-	position: absolute;
-	content: '';
-	border-radius: 20px;
-	width: 10px;
-	height: 10px;
-	background-color: #a0daa9;
-	z-index: -1;
-	top: 75px;
-	left: 63px;
-}
-.profile__socials {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
 .tooltip::after {
 	position: absolute;
 	content: attr(data-tooltip);
