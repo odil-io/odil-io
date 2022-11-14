@@ -45,7 +45,7 @@ include 'lib/public.php';
 					</div>
 					<div>
 						<p>Hi, I'm Odi and I've been tinkering on the web since '98.</p>
-						<p>I'm an <a href="//wikipedia.org/wiki/Multipotentiality">multipotential</a> person who has interests in Physics, Philosophy and <a href="//wikipedia.org/wiki/STEM">STEM</a>.</p>
+						<p>I'm a <a href="//wikipedia.org/wiki/Multipotentiality">multipotentialite</a> who has interests in Physics, Philosophy and <a href="//wikipedia.org/wiki/STEM">STEM</a>.</p>
 					</div>
 				</article>
 			</section>
