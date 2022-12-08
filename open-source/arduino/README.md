@@ -1,6 +1,6 @@
 # Arduino Projects
 
-[A Spot Welder]()
+[A Spot Welder](spotwelder.md)
 
 ## Resources
 
