@@ -5,3 +5,5 @@
 ## Resources
 
 [JCLPCB](https://jlcpcb.com/)
+
+[LCSC](https://www.lcsc.com/)
