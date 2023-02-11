@@ -1,0 +1,112 @@
+@import "./variables";
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body, text {
+  font-family: $system-fonts;
+  font-size: 1.1em;
+  color: $regular-text;
+  font-weight: lighter;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $primary-text;
+  font-family: $system-fonts;
+  font-weight: lighter;
+  margin-top: 1em;
+  margin-bottom: 0.8em;
+  &.no-top {
+    margin-top: 0;
+  }
+}
+
+.padded {
+  padding-left: $normal-space;
+  padding-right: $normal-space;
+}
+
+div.el-card {
+  border: 0 !important;
+  border-left: 6px solid $primary-brand !important;
+}
+
+.heading-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  aside {
+    font-size: 0.8em;
+    font-style: italic;
+  }
+}
+
+.brand {
+  color: $primary-brand;
+}
+
+.secondary-brand {
+  color: $secondary-brand;
+}
+
+.secondary {
+  color: $secondary-text;
+}
+
+.low-emphasis {
+  color: $placeholder-text;
+}
+
+.content-section {
+  max-width: $content-width;
+  margin: 1em auto;
+}
+
+.space {
+  margin-bottom: $normal-space;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+}
+
+.el-select {
+  .el-input.is-focus .el-input__inner, .el-input__inner:focus {
+    border-color: $secondary-brand !important;
+  }
+}
+
+.el-input {
+  input:focus {
+    border-color: $secondary-brand !important;
+  }
+}
+
+.el-col {
+  padding: 0 $col-gutter;
+  &:first-child {padding-left: 0;}
+  &:last-child {padding-right: 0;}
+}
+
+.el-tooltip__popper.is-dark a {
+  color: $white;
+}
+
+@media only screen and (max-width: 990px) {
+  .el-notification {
+    width: 100% !important;
+    right: 0 !important;
+  }
+
+  .el-col {
+    padding: 0;
+  }
+
+  .padded {
+    padding-left: $small-space;
+    padding-right: $small-space;
+  }
+}

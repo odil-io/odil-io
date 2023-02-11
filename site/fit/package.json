@@ -1,0 +1,54 @@
+{
+  "name": "Superset",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "prod": "cross-env NODE_ENV=production npm run build",
+    "start": "npm run build",
+    "serve-dist": "cd dist&&ws --spa index.html --https --port 8080",
+    "test": "cross-env NODE_ENV=test vue-cli-service test"
+  },
+  "dependencies": {
+    "apexcharts": "^3.20.0",
+    "d3": "^5.5.0",
+    "element-ui": "^2.3.3",
+    "lodash": "^4.17.5",
+    "luxon": "^1.0.0",
+    "moment": "^2.22.0",
+    "register-service-worker": "^1.0.0",
+    "vue": "^2.5.13",
+    "vue-apexcharts": "^1.5.1",
+    "vue-popper": "^0.3.8",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "vuex-persist": "^1.1.6"
+  },
+  "devDependencies": {
+    "@types/gapi": "0.0.35",
+    "@types/gapi.client.fitness": "^1.0.0",
+    "@vue/cli-plugin-babel": "^3.0.0-beta.6",
+    "@vue/cli-plugin-pwa": "^3.0.0-beta.6",
+    "@vue/cli-plugin-unit-mocha": "^3.0.0-beta.6",
+    "@vue/cli-service": "^3.0.0-beta.6",
+    "@vue/test-utils": "^1.0.0-beta.10",
+    "babel-plugin-component": "^1.1.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "compression-webpack-plugin": "^1.1.11",
+    "cross-env": "^5.1.4",
+    "html-loader": "^0.5.5",
+    "local-web-server": "^2.6.0",
+    "markdown-loader": "^2.0.2",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^6.0.6",
+    "vue-template-compiler": "^2.5.13",
+    "webpack-bundle-analyzer": "^2.11.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

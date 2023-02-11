@@ -1,0 +1,43 @@
+$nav-height: 60px;
+
+$white: #ffffff;
+$primary-brand: #FF3B3F;
+$secondary-brand: #2BA9FF;
+$neutral: #EFEFEF;
+
+$muted-primary: rgba($primary-brand, 0.6);
+
+$main: #409EFF;
+$success: #67C23A;
+$warning: #E6A23C;
+$danger: #F56C6C;
+$info: #909399;
+
+$primary-text: #303133;
+$regular-text: #333436;
+$secondary-text: #515356;
+$placeholder-text: #C0C4CC;
+
+$base-border: #DCDFE6;
+$light-border: #E4E7ED;
+$lighter-border: #EBEEF5;
+$extra-light-border: #F2F6FC;
+
+$normal-space: 1em;
+$small-space: 8px;
+$box-corner-radius: 4px;
+$content-width: 1470px;
+$col-gutter: $small-space;
+
+@mixin drop-shadow {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+$--color-primary: $primary-brand;
+
+/* icon font path, required */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+$system-fonts: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+
+@import "~element-ui/packages/theme-chalk/src/index";
