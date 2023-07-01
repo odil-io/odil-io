@@ -17,5 +17,5 @@ jobs:
          port: ${{ secrets.PORT }}
          username: ${{ secrets.USER }}
          password: ${{ secrets.PASSWORD }}
-         localPath: ${{ secrets.LOCAL }}
-         remotePath: ${{ secrets.REMOTE }}
+         localPath: './site/'
+         remotePath: './www'
