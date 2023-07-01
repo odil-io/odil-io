@@ -18,13 +18,3 @@ jobs:
          password: ${{ secrets.PASSWORD }}
          localPath: './site/'
          remotePath: './www/'
-
-      - name: Deploy API
-        uses: Creepios/sftp-action@v1.0.4
-        with:
-         host: ${{ secrets.HOST }}
-         port: ${{ secrets.PORT }}
-         username: ${{ secrets.USER }}
-         password: ${{ secrets.PASSWORD }}
-         localPath: './api/'
-         remotePath: './subdomains/api/'
