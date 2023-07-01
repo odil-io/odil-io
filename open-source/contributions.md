@@ -1,9 +1,4 @@
-# These are mine contributions in Open Source projects
-
-These are non Co-Authored commits in which I had a notable impact on resolving the issue.
-
-## Contributions
-
+# These are my contributions in Open Source projects
 
 A VSCode Plugin called [WordPress Snippets](https://marketplace.visualstudio.com/items?itemName=wordpresstoolbox.wordpress-toolbox) by [wpprotools.io](https://wpprotools.io/).
 
