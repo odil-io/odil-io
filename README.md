@@ -1,5 +1,6 @@
-Hi, hello. I have a lot of interests and (barely started) projects. Most likely, future me will update this file.
+Hi,
 
-Hi past me, this is future me. You in fact did not update this file. Future future me will probably do, soon.
+I'm a mostly self taught web developer with most of my experience being WordPress and PHP both Back- and Frontend. I have interests in science and technology. Also known as S.T.E.M but I don't like Math that much so more like S.T.E amirite.
+So without further ado, check out my repo's.
 
-Hey Future Future me, ya didn't do it did ya? Maybe this time soon?
+Currently: working on a protable system to control RGB LED's inside percussion instruments to light up their drums according to a set of presets and custom values via a colorwheel. All remotely controlled and wireless via EPS-32's.
