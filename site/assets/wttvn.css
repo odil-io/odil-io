@@ -50,7 +50,7 @@ a {
 	white-space: nowrap;
 }
 a:focus, a:hover, a:active {
-        color: #292929;
+	color: #292929;
 }
 a:before,
 li a:before{
@@ -160,7 +160,10 @@ footer {
 	align-items: center;
 }
 .social {
-        color: #acacac;
+	color: #acacac;
+}
+.social::visited {
+	color: #a0daa9;
 }
 .social:before {
 	display: none;
