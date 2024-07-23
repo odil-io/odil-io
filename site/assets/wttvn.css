@@ -432,6 +432,7 @@ q {
 .youtube:hover {
 	color: #FF0000;
 }
+.twitch:hover,
 .twitch:hover .head,
 .twitch:hover .eyes {
 	color: #a970ff;
