@@ -440,6 +440,9 @@ q {
 .twitch:hover .eyes {
 	color: #a970ff;
 }
+.twitch:hover .face {
+	fill: #292929;
+}
 .twitch:hover .face{
 	fill: #fff;
 }
