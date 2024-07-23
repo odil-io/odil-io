@@ -218,6 +218,9 @@ footer {
 .instagram:hover svg {
 	fill: url(#hover);
 }
+.instagram:hover #insta{
+	fill: url(#gradient);
+}
 #path4528 {
 	stroke: #000;
 }
