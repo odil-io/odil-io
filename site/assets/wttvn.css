@@ -192,14 +192,15 @@ footer {
 	transition-delay: 1s;
 	transition-duration: .5s;
 	transition-timing-function: ease;
+	color: #a0daa9;
 }
 .stackoverflow:hover .overflow {
 	fill: #F48024;
 }
-.open-collective:hover .c {
+.open-collective:hover .collective {
 	fill: #8FC7FF;
 }
-.open-collective:hover .o {
+.open-collective:hover .open {
 	fill: #297EFF;
 }
 .linkedin:hover {
@@ -213,6 +214,12 @@ footer {
 }
 .instagram:hover svg {
 	fill: url(#hover);
+}
+.twitch:hover svg {
+	fill: #a970ff;
+}
+.twitch:hover .face{
+	color: #fff;
 }
 #path4528 {
 	stroke: #000;
