@@ -1,14 +1,5 @@
 <?php
-ini_set( 'zlib.output_compression_level', 6 );
-
-if ( isset( $_SERVER['HTTP_ACCEPT_ENCODING'] ) ) {
-	if ( substr_count( $_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip' ) ) {
-		ob_start( 'ob_gzhandler' );
-	} else {
-		ob_start();
-	}
-}
-
+include 'lib/main.php';
 include 'lib/quotes.php';
 include 'lib/public.php';
 ?>
@@ -44,7 +35,8 @@ include 'lib/public.php';
 						<img class="avatar" src="assets/media/profile.jpg" alt="Afbeelding van Odilio" width="75">
 					</div>
 					<div>
-						<p>Hi, I'm a mostly self taught web developer with interests in science and technology who's been tinkering on the web since '98.</p>
+						<p>Hi,</p>
+						<p>I'm a mostly self taught web developer with interests in science and technology who's been tinkering on the web since '98.</p>
 					</div>
 				</article>
 			</section>
