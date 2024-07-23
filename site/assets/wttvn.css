@@ -215,12 +215,6 @@ footer {
 .instagram:hover svg {
 	fill: url(#hover);
 }
-.twitch:hover svg {
-	fill: #a970ff;
-}
-.twitch:hover .face{
-	color: #fff;
-}
 #path4528 {
 	stroke: #000;
 }
@@ -435,7 +429,13 @@ q {
 	left: 50vw;
 	transform: translateX(-50%) translateY(-50%);
 }
-
 .youtube:hover {
 	color: #FF0000;
+}
+.twitch:hover .head,
+.twitch:hover .eyes {
+	color: #a970ff;
+}
+.twitch:hover .face{
+	color: #fff;
 }
