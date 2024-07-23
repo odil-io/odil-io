@@ -1,0 +1,25 @@
+{
+	"recommendations": [
+		"ms-dotnettools.vscode-dotnet-pack",
+		"ms-dotnettools.vscode-dotnet-runtime",
+		"ms-vscode.cpptools",
+		"ms-vscode.cpptools-extension-pack",
+		"ms-vscode.cpptools-themes",
+		"ms-dotnettools.csharp",
+		"ms-dotnettools.csdevkit",
+		"akamud.vscode-caniuse",
+		"github.vscode-pull-request-github",
+		"ms-vscode.hexeditor",
+		"techer.open-in-browser",
+		"xdebug.php-debug",
+		"neilbrayfield.php-docblocker",
+		"shevaua.phpcs",
+		"esbenp.prettier-vscode",
+		"mechatroner.rainbow-csv",
+		"syler.sass-indented",
+		"ban.spellright",
+		"johnbillion.vscode-wordpress-hooks",
+		"wordpresstoolbox.wordpress-toolbox",
+		"ms-vscode-remote.remote-wsl"
+	]
+}
