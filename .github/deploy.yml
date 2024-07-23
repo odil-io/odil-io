@@ -1,21 +1,2 @@
-name: Deploy via SFTP
-on:
-  push:
-    branches: [ "main" ]
-  workflow_dispatch:
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Deploy site
-        id: upload
-        uses: Creepios/sftp-action@v1.0.4
-        with:
-         host: ${{ secrets.HOST }}
-         port: ${{ secrets.PORT }}
-         username: ${{ secrets.USER }}
-         password: ${{ secrets.PASSWORD }}
-         localPath: './site/'
-         remotePath: './www'
+- name: ssh deploy
+  uses: easingthemes/ssh-deploy@v5.0.3
