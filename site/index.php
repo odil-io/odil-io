@@ -44,8 +44,7 @@ include 'lib/public.php';
 						<img class="avatar" src="assets/media/profile.jpg" alt="Afbeelding van Odilio" width="75">
 					</div>
 					<div>
-						<p>Hi, I'm Odi and I've been tinkering on the web since '98.</p>
-						<p>I'm a <a href="//wikipedia.org/wiki/Multipotentiality">multipotentialite</a> who has interests in Physics, Philosophy and <a href="//wikipedia.org/wiki/STEM">STEM</a>.</p>
+						<p>Hi, I'm a mostly self taught web developer with interests in science and technology who's been tinkering on the web since '98.</p>
 					</div>
 				</article>
 			</section>
