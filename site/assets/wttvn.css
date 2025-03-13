@@ -162,7 +162,8 @@ footer {
 .social {
 	color: #acacac;
 }
-.social::visited {
+.social::visited,
+.social::active {
 	color: #a0daa9;
 }
 .social:before {
