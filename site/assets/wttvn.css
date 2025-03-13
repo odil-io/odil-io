@@ -163,7 +163,8 @@ footer {
 	color: #acacac;
 }
 .social:visited,
-.social:active {
+.social:active,
+.social:focus{
 	color: #acacac;
 }
 .social:before {
