@@ -19,7 +19,7 @@ body {
 	text-rendering: optimizeLegibility;
 	font-size: 1rem;
 }
-section{
+section {
 	display: flex;
 	justify-content: center;
 }
@@ -36,7 +36,7 @@ article {
 		gap: 28px;
 	}
 }
-p{
+p {
 	font-size: 20px;
 	line-height: 28px;
 	font-weight: 200;
@@ -107,11 +107,11 @@ li a:hover:before{
 	opacity: 1;
 	z-index: 1992;
 }
-.avatar{
+.avatar {
 	border-radius: 100%;
 	overflow: hidden;
 }
-.its-my-party-and-i-ll-cry-if-i-want-to:before{
+.its-my-party-and-i-ll-cry-if-i-want-to:before {
 	position: absolute;
 	content: '';
 	background-image: url('/assets/media/party-hat.svg');
@@ -162,9 +162,9 @@ footer {
 .social {
 	color: #acacac;
 }
-.social::visited,
-.social::active {
-	color: #a0daa9;
+.social:visited,
+.social:active {
+	color: #acacac;
 }
 .social:before {
 	display: none;
