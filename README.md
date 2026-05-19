@@ -1,3 +1,3 @@
 Hi,
 
-I'm a mostly self taught web developer with interests in science and technology.
+I no longer do anything with web-development.
