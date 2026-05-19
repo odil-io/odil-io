@@ -36,7 +36,7 @@ include 'lib/public.php';
 					</div>
 					<div>
 						<p>Hi,</p>
-						<p>I'm a mostly self taught web developer with interests in science and technology who's been tinkering on the web since '98.</p>
+						<p><b>404</b>, description not found.</p>
 					</div>
 				</article>
 			</section>
