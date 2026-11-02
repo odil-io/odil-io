@@ -27,11 +27,11 @@
         //Print all the entries
         foreach($entries as $entry){
             ?>
-            <li><a href="<?= $entry->link ?>"><?= $entry->title ?></a> (<?= parse_url($entry->link)['host'] ?>)
+            <li><a href="<?= $entry->link ?>"><?= $entry->title ?></a>
+                <img src="<?= $entry->enclosure[0]["url"] ?>" />
             <p><?= strftime('%m/%d/%Y %I:%M %p', strtotime($entry->pubDate)) ?></p>
             <p><?= $entry->description ?></p></li>
             <?php
-            echo $entry->enclosure[0]["url"];
         }
         ?>
         </ul>
