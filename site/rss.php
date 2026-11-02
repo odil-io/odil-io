@@ -27,7 +27,7 @@
         //Print all the entries
         foreach($entries as $entry){
             ?>
-            <li><a href="<?= $entry->link ?>"><?= $entry->title ?></a>
+            <li><h1><?= $entry->title ?></h1>
                 <img src="<?= $entry->enclosure[0]["url"] ?>" />
             <p><?= strftime('%m/%d/%Y %I:%M %p', strtotime($entry->pubDate)) ?></p>
             <p><?= $entry->description ?></p></li>
