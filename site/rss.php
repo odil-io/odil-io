@@ -31,7 +31,7 @@
             <p><?= strftime('%m/%d/%Y %I:%M %p', strtotime($entry->pubDate)) ?></p>
             <p><?= $entry->description ?></p></li>
             <?php
-            var_dump($entry->enclosure[0]["url"]);
+            echo $entry->enclosure[0]["url"];
         }
         ?>
         </ul>
